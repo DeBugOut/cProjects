@@ -34,7 +34,7 @@ int main(){
     
     //format specifier %.01 (decimal precision)
     //%1 - minimum field length
-    //%- - left align
+    //%- - left align text
 
     
 
