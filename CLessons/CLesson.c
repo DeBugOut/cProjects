@@ -2,12 +2,6 @@
 // Lessons on C
 
 #include <stdio.h>
-/*Includes the 
-std - standard 
-i - input 
-o - output 
-h - headers.
-*/
 
 int main(){
     // This is a program that outputs "Hello World"
@@ -39,7 +33,10 @@ int main(){
     //%1 - minimum field length
     //%- - left align text
 
-    
+    float pi = 3.141592;
+    printf("Two digits of PI is: %6.02f\n", pi);
+    printf("Three digits of PI is: %-8.03f\n", pi);
+    printf("Five digits of PI is: %8.05f\n", pi);
 
     return 0;
 }
