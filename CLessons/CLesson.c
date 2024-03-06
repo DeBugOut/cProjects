@@ -1,3 +1,6 @@
+// CLessons.c
+// Lessons on C
+
 #include <stdio.h>
 /*Includes the 
 std - standard 
