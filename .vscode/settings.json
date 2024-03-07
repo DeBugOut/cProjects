@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "218Problem.C": "cpp"
     },
     "code-runner.runInTerminal": true
 }
