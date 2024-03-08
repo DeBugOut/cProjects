@@ -67,7 +67,19 @@ int main(){
     printf("q incremented is %d\n", q);
     printf("w decremented is %d\n", w);
 
-    
+    //Augmented Assignment Operators:
+    //used as operators to replace a variable
+    //for example:
+
+    int t = 10;
+
+    // t = t + 1;
+    t += 1; //both of these are the same
+    //this could be done for
+    // + - * / and %
+    // += -= *= /= %=
+
+    printf("%d", t);
 
     return 0;
 }
