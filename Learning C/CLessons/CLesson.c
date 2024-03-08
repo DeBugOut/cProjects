@@ -38,5 +38,36 @@ int main(){
     printf("Three digits of PI is: %-8.03f\n", pi);
     printf("Five digits of PI is: %8.05f\n", pi);
 
+    //constant values - cannot be altered in 
+    //any point of the program.
+
+    const float PI = 3.141592;      
+    //to signify a const the variable is 
+    //written in all CAPS
+
+    // PI = 412; (will cause an error)
+    printf("%f\n", PI);
+
+    //Arithmetic Operators
+    // + (addition) - (subtraction)
+    // * (multiplication) / (division)
+    // % (modulus) 
+    // ++ (increment) -- (decrement)
+
+    int q = 6;
+    int w = 9;
+
+    q++;
+    w--;
+
+    float e = q / (float) w; 
+    // divisor & result has to be a float.
+
+    printf("q / w is %f\n", e);
+    printf("q incremented is %d\n", q);
+    printf("w decremented is %d\n", w);
+
+    
+
     return 0;
 }
