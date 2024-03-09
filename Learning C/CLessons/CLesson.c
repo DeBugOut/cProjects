@@ -146,6 +146,8 @@ int main(){
     char string2[] = "Program";
 
     //FUNCTIONS of string.h:
+
+    //String MODIFICATION Functions:
     //strlwr(string1);              //converts to lower case
     //strupr(string1);              //converts to upper case
     //strcat(string1, string2);     //appends str2 to the end of str1
@@ -153,7 +155,69 @@ int main(){
     //strcpy(string1, string2);     //copy string2 to string1
     //strncpy(string1, string2, 1); //same thing except copy n characters
 
-    printf("%s", string1);
+    //String SET Functions:
+    //strset(string1, '?');     //set all the chars. of a string to a given char.
+    //strnset(string1, 'x', 1); //set the first n chars. of a string to a given char.
+    //strrev(string1);          //used to reverse a string.
+
+    printf("%s\n", string1);
+
+    //Returning String INTEGERS:
+    int result = strlen(string1);               //return string length as int.
+    //int result = strcmp(string1, string2);      //string compare all chars. (matching)
+    //int result = strncmp(string1, string2, 1);  //string compare n chars.
+    //int result = strcmpi(string1, string1);     //string compare all (ignore case)
+    //int result = strncmpi(string1, string1, 1); //string compare n chars. (ignore case)
+
+    printf("%d\n", result);
+
+    //FOR LOOPS: 
+    //for loops - repeats a section of code for a limited amount of time
+
+    for(int i = 1; i <= 10; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    //WHILE LOOPS:
+    //while loops - repeats a section of code possibly unlimited times.
+    //while loops execute as long as the condition is true. 
+    //while loops might sometimes not execute at all.
+
+    /*
+    char prenom[25];
+    printf("\nYour prenom: ");
+    fgets(prenom, 25, stdin);
+    prenom[strlen(prenom) - 1] = '\0';
+    
+    while (strlen(prenom) == 0)
+    {
+        printf("\n Please enter your name!");
+        printf("\nYour Prenom: ");
+        fgets(prenom, 25, stdin);
+        prenom[strlen(prenom) - 1] = '\0';
+    }
+
+    printf("Hello %s", prenom);
+    */
+
+    //DO WHILE loop:
+    // while loop = checks a condition, THEN executes a block of code if condition is true
+    // do while loop = always executes a block of code once, THEN checks a condition
+
+    int number = 0;
+    int sum = 0;
+    
+    do{
+        printf("Enter a # above 0: ");
+        scanf("%d", &number);
+        if(number >= 0)
+        {
+            sum += number;
+        }
+    }while(number > 0);
+
+    printf("sum: %d", sum);
 
     return 0;
 }
