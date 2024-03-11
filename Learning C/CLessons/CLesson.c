@@ -205,6 +205,7 @@ int main(){
     // while loop = checks a condition, THEN executes a block of code if condition is true
     // do while loop = always executes a block of code once, THEN checks a condition
 
+    /*
     int number = 0;
     int sum = 0;
     
@@ -218,6 +219,68 @@ int main(){
     }while(number > 0);
 
     printf("sum: %d", sum);
+    */
+
+    //nested loop = a loop inside of another loop
+        //CHECK project 'nestedLoop.c'
+
+    // switch = A more efficient alternative to using many "else if" statements
+    // allows a value to be tested for equality against many cases
+
+    /*
+    char letterGrade;
+
+    printf("\nEnter a letter grade: ");
+    scanf("%c", &letterGrade);
+
+    switch(letterGrade){
+        case 'A':
+            printf("perfect!\n");
+            break;
+        case 'B':
+            printf("You did good!\n");
+            break;
+        case 'C':
+            printf("You did okay!\n");
+            break;
+        case 'D':
+            printf("At least it's not an F!\n");
+            break;
+        case 'F':
+            printf("YOU FAILED!\n");
+            break;
+        default:
+            printf("Please enter only valid grades");
+    }
+    */
+
+    // continue = skips rest of code & forces the next iteration of the loop
+    // break = exits a loop/switch
+
+    for(int i = 1; i <= 20; i++)
+    {
+        if(i == 13)
+        {
+            continue;           //skips 13
+            //break;
+        }
+        printf("%d\n", i);
+    }
+
+    // array = a data structure that can store many values of the same data type.
+
+    //double prices[] = {5.0, 10.0, 15.0, 25.0, 20.0};
+    double prices[5];
+
+    prices[0] = 5.0;
+    prices[1] = 10.0;
+    prices[2] = 15.0;
+    prices[3] = 25.0;
+    prices[4] = 20.0;
+
+    printf("$%.2lf", prices[0]);
+
+    
 
     return 0;
 }
