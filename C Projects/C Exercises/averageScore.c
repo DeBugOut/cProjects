@@ -7,6 +7,7 @@ int main(void) {
     // initialization phase
     int total = 0; // initialize total of grades to 0
     int counter = 1; // number of the grade to be entered next
+    
     // processing phase
     while (counter <= 10) { // loop 10 times
         printf("%s", "Enter a grade: "); // prompt for input
