@@ -279,9 +279,6 @@ int main(){
     prices[4] = 20.0;
 
     printf("$%.2lf", prices[0]);
-
-    
-
     return 0;
 }
 
