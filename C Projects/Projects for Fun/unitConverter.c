@@ -1,3 +1,6 @@
+//unitConverter.c.
+// A program that converts unit for temp, currency and mass.
+
 #include <stdio.h>
 #include <ctype.h>
 
