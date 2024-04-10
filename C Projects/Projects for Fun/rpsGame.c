@@ -5,6 +5,7 @@
 #include <stdlib.h> 
 #include <math.h>
 #include <time.h>
+#include <ctype.h>
 
 int game (char you, char computer);
 int randomnum (int min, int max);
@@ -18,8 +19,11 @@ int main() {
     printf("(r) Rock, (p) Paper, (s) Scissors, (x) Stop\n");
     printf("--------------------------------------------\n");
     scanf("%s", &you);
+
+    you = tolower(you);
     
     while(you != 'x'){
+
         n = randomnum(0,100);
 
         if (n>=0 && n<33){
@@ -58,6 +62,8 @@ int main() {
         printf("(r) Rock, (p) Paper, (s) Scissors, (x) Stop\n");
         printf("--------------------------------------------\n");
         scanf("%s", &you);
+
+        you = tolower(you);
     }
 
     return 0;
