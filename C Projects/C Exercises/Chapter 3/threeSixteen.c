@@ -27,15 +27,14 @@ int main() {
 
         printf("The miles per gallon is: %f\n", mpg(miles, gal));
         
-        printf("Enter the gallons used (-1 to end): ");
+        printf("\nEnter the gallons used (-1 to end): ");
         scanf("%f", &gal);
 
         tanks++;
     }
 
     if (tanks > 0){
-        float overallavg = totalmiles / totalgal;
-        printf("The overall average mpg was %f\n", overallavg);
+        printf("The overall average mpg was %f\n", mpg(totalmiles, totalgal));
     }
     else{
         printf("No data entered.\n");
