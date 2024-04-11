@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int main() {
-    int rows = 5; // Number of rows 
+    int rows = 10; // Number of rows 
     int i, j, k;
 
     // Loop for the top
