@@ -11,7 +11,7 @@ int main(){
 
     for (int i = 0; i < count; i++){
         scanf("%d", &num);
-        sum+=num;
+        sum += num;
     }
 
     printf("\nThe result is: %d", sum);
