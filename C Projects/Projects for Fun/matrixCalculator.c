@@ -260,22 +260,22 @@ void ProductMatrix(int arrayone[10][10], int arraytwo[10][10], int rowsA, int co
     int pro[10][10];
 
      // Initializing all the Elements of Matrix Pro to 0
-    for (i = 0; i<rowsA; ++i)
-        for (j = 0; j<columnsB; ++j)
+    for (i = 0; i < rowsA; ++i)
+        for (j = 0; j < columnsB; ++j)
         {
             pro[i][j] = 0;
         }
 
-    for (i = 0; i<rowsA; i++)
-        for (j = 0; j<columnsB; j++)
+    for (i = 0; i < rowsA; i++)
+        for (j = 0; j < columnsB; j++)
         // Initializing the Elements of Result Matrix to 0 before Processing
         //pro[i][j] = 0;
-            for (k = 0; k<columnsA; ++k)
+            for (k = 0; k < columnsA; ++k)
             {
                 pro[i][j] += arrayone[i][k] * arraytwo[k][j];
             }
-    for (i = 0; i<rowsA; ++i){
-        for (j = 0; j<columnsB; ++j)
+    for (i = 0; i < rowsA; ++i){
+        for (j = 0; j < columnsB; ++j)
         {
             printf("\t%d ", pro[i][j]);
         }
