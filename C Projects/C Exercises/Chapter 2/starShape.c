@@ -4,8 +4,11 @@
 #include <stdio.h>
 
 int main() {
-    int rows = 10; // Number of rows 
+    int rows; // Number of rows 
     int i, j, k;
+
+    printf("What is the number of rows the print (odd numbers): ");
+    scanf("%d", &rows);
 
     // Loop for the top
     for (i = 0; i < rows / 2 + 1; i++) {
