@@ -1,32 +1,34 @@
 #include <stdio.h>
-int main()
-{
-  int n, c, k;
 
-  printf("Enter number of rows\n");
-  scanf("%d", &n);
+void print_diamond(int rows) {
+    int i, j;
+    // Print the upper part of the diamond
+    for (i = 1; i <= rows; i++) {
+        // Print leading spaces
+        for (j = 1; j <= rows - i; j++) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= 2 * i - 1; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    // Print the lower part of the diamond
+    for (i = rows - 1; i > 0; i--) {
+        // Print leading spaces
+        for (j = 1; j <= rows - i; j++) {
+            printf(" ");
+        }
+        // Print stars
+        for (j = 1; j <= 2 * i - 1; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
 
-  for (k = 1; k <= n; k++)
-  {
-    for (c = 1; c <= n-k; c++)
-      printf(" ");
-
-    for (c = 1; c <= 2*k-1; c++)
-      printf("*");
-
-    printf("\n");
-  }
-
-  for (k = 1; k <= n - 1; k++)
-  {
-    for (c = 1; c <= k; c++)
-      printf(" ");
-
-    for (c = 1 ; c <= 2*(n-k)-1; c++)
-      printf("*");
-
-    printf("\n");
-  }
-
-  return 0;
+int main() {
+    print_diamond(3);
+    return 0;
 }
