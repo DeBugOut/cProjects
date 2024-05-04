@@ -4,4 +4,5 @@
         "218Problem.C": "cpp"
     },
     "code-runner.runInTerminal": true
+    "terminal.integrated.fontSize": 18,
 }
