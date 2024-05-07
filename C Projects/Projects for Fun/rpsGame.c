@@ -24,7 +24,7 @@ int main() {
     
     while(you != 'x'){
 
-        n = randomnum(0,100);
+        n = randomnum(0,99);
 
         if (n>=0 && n<33){
             computer = 's';
@@ -36,7 +36,7 @@ int main() {
             printf("Computer: r\n");
             printf("-----------\n");
         }
-        else if (n>66 && n<100){
+        else if (n>66 && n<99){
             computer = 'p';
             printf("Computer: p\n");
             printf("-----------\n");
