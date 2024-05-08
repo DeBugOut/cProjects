@@ -16,13 +16,13 @@ int main(){
 
     if(func == 1){
         int v1, v2;
-        printf("Enter two digits: ");
+        printf("Enter two digits with a space in between: ");
         scanf("%d %d", &v1, &v2);
         printf("\nThe quotient is: %d", findQuotient(v1, v2));
     }
     else if(func == 2){
         int v1, v2;
-        printf("Enter two digits: ");
+        printf("Enter two digits with a space in between: ");
         scanf("%d %d", &v1, &v2);
         printf("\nThe remainder is: %d", findRemainder(v1, v2));
     }
