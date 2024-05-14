@@ -1,5 +1,5 @@
 //fiveFifteen.c
-// Hypothenuse Calculation Porgram.
+// Hypothenuse Calculation Program.
 
 #include <stdio.h>
 #include <math.h>
